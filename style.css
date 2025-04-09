@@ -71,12 +71,12 @@
 
 :root {
     --header-bg-color: rgb(34 37 99);
-    --header-fg-color: rgb(237 243 249);
+    --header-fg-color: rgb(169 124 62);
   
     --topNav-bg-color: rgb(22, 25, 85);
-    --topNav-fg-color: rgb(1, 35, 70);
-    --topNav-link-color-link: rgb(1, 35, 70);
-    --topNav-link-color-visited: rgb(52, 61, 70);
+    --topNav-fg-color: rgb(169 124 62);
+    --topNav-link-color-link: rgb(169 124 62);
+    --topNav-link-color-visited: rgb(216 190 141);
     --topNav-link-color-hover: rgb(41, 1, 70);
     --topNav-link-color-active: rgb(70, 1, 25);
   
@@ -85,7 +85,7 @@
     --main-fg-color: rgb(1, 35, 70);
     --sidebar-bg-color: rgb(255, 255, 255);
     --sidebar-fg-color: rgb(1, 35, 70);
-    --footer-bg-color: rgb(255, 255, 255);
+    --footer-bg-color: rgb(22, 25, 85);
     --footer-fg-color: rgb(1, 35, 70);
     --bottomNav-bg-color: rgb(255, 255, 255);
     --bottompNav-fg-color: rgb(1, 35, 70);
@@ -99,7 +99,7 @@
     --accent-color: rgb(63, 77, 159);
     --highlight-color: #f3c;
   
-   --footerNav-bg-color: rgb(255, 255, 255);
+   --footerNav-bg-color: rgb(22, 25, 85);
    --footerNav-fg-color: rgb(1, 35, 70);
    --footerNav-link-color-link: rgb(1, 35, 70);
    --footerNav-link-color-visited: rgb(52, 61, 70);
@@ -189,15 +189,16 @@ header .branding {
 }
 
 header .siteinfo a{
-  color:gold;
+  color: var(--topNav-link-color-link);
   text-decoration: none;
+  font-size: 1.8rem;
 }
 
 .flex-container, h1{
   min-width: 60%;
   max-width: 90%;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 
@@ -207,10 +208,10 @@ header .siteinfo a{
   }
   /* CHANGE LOGO SIZE IN add_theme_support('custom-logo' IN FUNCTIONS.PHP ACCORDINGLY */
   
-  header .siteinfo {}
   
-  
-  header .description {}
+  header .description {
+    color: var(--header-fg-color);
+  }
   
   
   .search-form {
@@ -227,12 +228,12 @@ header .siteinfo a{
   .search-form input[type="submit"] { width: fit-content}
 
   .primary-menu{
-    background-color: #1c0263;
+    background-color: var(--topNav-bg-color);
   }
 
   .primary-menu li a {
     font-family: var(--bodytext-font);
-    color: var(--topNav-fg-color); 
+    color: var(--topNav-link-color); 
     font-size: small;
   }
   
@@ -241,6 +242,31 @@ header .siteinfo a{
  .primary-menu li a:hover {color: var(--topNav-link-color-hover);}
  .primary-menu li a:active {color: var(--topNav-link-color-active);}
   
+.flex-container main p {
+  margin-top: 0rem;
+}
+
+h2{
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3{
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h4{
+  margin-top: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+
+h2 + h3{
+  margin-top: -0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+
 
  aside {
     font-size: small;
@@ -289,6 +315,7 @@ header .siteinfo a{
   footer {
     background-color: var(--footer-bg-color);
     font-size: small;
+    padding: 1rem;
 }
 
 .footer-nav li a {
