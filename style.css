@@ -96,15 +96,15 @@
     --titles-color: #8C5406;
     --bodytext-color: #444444;
   
-    --accent-color: rgb(63, 77, 159);
+    --accent-color: rgb(216 190 141);
     --highlight-color: #f3c;
   
    --footerNav-bg-color: rgb(22, 25, 85);
-   --footerNav-fg-color: rgb(1, 35, 70);
-   --footerNav-link-color-link: rgb(1, 35, 70);
-   --footerNav-link-color-visited: rgb(52, 61, 70);
-   --footerNav-link-color-hover: rgb(41, 1, 70);
-   --footerNav-link-color-active: rgb(70, 1, 25);
+   --footerNav-fg-color: rgb(169 124 62);
+   --footerNav-link-color-link: rgb(169 124 62);
+   --footerNav-link-color-visited: rgb(216 190 141);
+   --footerNav-link-color-hover: rgb(169 124 62);
+   --footerNav-link-color-active: rgb(169 124 62);
 
    /* --titles-font: "helvetica neue", helvetica, arial, sans-serif; */
    --titles-font: "STIX Two Text", serif;
@@ -339,7 +339,9 @@ ol {
     padding-left: 2rem;
   }
   
-  .copyright {}
+  .copyright {
+    color: var(--accent-color);
+  }
 
   footer {
     background-color: var(--footer-bg-color);
