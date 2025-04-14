@@ -21,7 +21,7 @@
 1. DEFINE COLOR PALETTE (USING VARIABLES)
     1.1 Use names like 
         --body-bg-color 
-        --header-bg-color
+        --header-bg-color 
         See: https://www.w3schools.com/css/css3_variables.asp
 
 2. DEFINE FONTS FAMILIES (USING VARIABLES)
@@ -186,6 +186,7 @@ header .branding {
 	width: 60%;
 	justify-content: space-between;
   max-width: 16.25rem;
+  line-height: 1.8rem;
 }
 
 header .siteinfo a{
@@ -199,6 +200,7 @@ header .siteinfo a{
   max-width: 90%;
   margin-top: 1rem;
   margin-bottom: 0rem;
+  line-height: 2.5rem;
 }
 
 
@@ -229,6 +231,8 @@ header .siteinfo a{
 
   .primary-menu{
     background-color: var(--topNav-bg-color);
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
   }
 
   .primary-menu li a {
@@ -242,8 +246,9 @@ header .siteinfo a{
  .primary-menu li a:hover {color: var(--topNav-link-color-hover);}
  .primary-menu li a:active {color: var(--topNav-link-color-active);}
   
-.flex-container main p {
+p {
   margin-top: 0rem;
+  line-height: 2rem;
 }
 
 h2{
@@ -253,20 +258,28 @@ h2{
 
 h3{
   margin-top: 1.8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 }
 
 h4{
   margin-top: 1.2rem;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0rem;
 }
 
 h2 + h3{
-  margin-top: -0.2rem;
+  margin-top: 0rem;
   margin-bottom: 0.5rem;
 }
 
 
+ul{
+  line-height: 1.5rem;
+}
+
+ol {
+  list-style-type:georgian;
+  line-height: 1.5rem;
+}
 
  aside {
     font-size: small;
@@ -433,6 +446,8 @@ ul#menu {
     height: 100%;
     text-decoration: none;
     padding: 0 0.95rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
 
