@@ -195,15 +195,6 @@ header .siteinfo a{
   font-size: 1.8rem;
 }
 
-.flex-container, h1{
-  min-width: 60%;
-  max-width: 90%;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  line-height: 2.5rem;
-}
-
-
   img.custom-logo {
     width: 3rem;
     height: auto;
@@ -245,39 +236,50 @@ header .siteinfo a{
  .primary-menu li a:visited {color: var(--topNav-link-color-visited);}
  .primary-menu li a:hover {color: var(--topNav-link-color-hover);}
  .primary-menu li a:active {color: var(--topNav-link-color-active);}
-  
+
+ h1{
+    border: 1px solid green;
+ }
+
+ .flex-container, h1{
+  min-width: 60%;
+  max-width: 90%;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  line-height: 2.5rem;
+ }
+
+.flex-container{
+  border: 1px solid blue;
+}
+
 p {
   margin-top: 0rem;
   line-height: 2rem;
 }
 
 h2{
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 
 h3{
-  margin-top: 1.8rem;
+  margin-top: 2rem;
   margin-bottom: 0rem;
 }
 
 h4{
-  margin-top: 1.2rem;
+  margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
-h2 + h3{
-  margin-top: 0rem;
-  margin-bottom: 0.5rem;
-}
-
-
 ul{
+  padding-left: 2rem;
   line-height: 1.5rem;
 }
 
 ol {
-  list-style-type:georgian;
+  padding-left: 2rem;
+  list-style-type:decimal;
   line-height: 1.5rem;
 }
 
@@ -289,9 +291,14 @@ ol {
   
   figcaption {}
   
-  h2+p {}
+  h2+p {  
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;}
   
-  H2+ul, h2+ol {}
+  H2+ul, h2+ol {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
   
   h2+iframe {}
   
@@ -303,7 +310,9 @@ ol {
   
   h2+table {}
 
-  h2+h3 {}
+  h2+h3 {  
+    margin-top: 0rem;
+    margin-bottom: 0rem;}
   
   table {}
   
@@ -311,7 +320,9 @@ ol {
   
   blockquote {}
   
-  h3+p {}
+  h3+p {  
+    margin-top: 0rem;
+    margin-bottom: 0rem;}
   
   section>h2 {}
   
@@ -322,6 +333,11 @@ ol {
   form input {}
   
   form input:last-child {}
+
+  address{
+    line-height: 1.8rem;
+    padding-left: 2rem;
+  }
   
   .copyright {}
 
