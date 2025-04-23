@@ -66,6 +66,9 @@
 
 */
 
+@import url(css/mobile-nav.css);
+@import url(css/desktop-nav.css);
+@import url(css/contact.css);
 
 /* COLOR PALETTE & FONTS VARIABLES  */
 
@@ -237,9 +240,9 @@ header .siteinfo a{
  .primary-menu li a:hover {color: var(--topNav-link-color-hover);}
  .primary-menu li a:active {color: var(--topNav-link-color-active);}
 
- h1{
-    border: 1px solid green;
- }
+ /* h1{ */
+    /* border: 1px solid green; */
+ /* } */
 
  .flex-container, h1{
   min-width: 60%;
@@ -274,14 +277,20 @@ h4{
 }
 
 ul{
+  list-style-image: url('img/dash.svg');
   padding-left: 2rem;
   line-height: 1.5rem;
 }
 
 ol {
+  list-style-type: decimal;
   padding-left: 2rem;
   list-style-type:decimal;
   line-height: 1.5rem;
+}
+
+li{
+  padding-left: 0.5rem;
 }
 
  aside {
